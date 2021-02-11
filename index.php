@@ -25,7 +25,7 @@ if(isset($_SESSION['perdoruesId'])){
 		require '../navbar.php';
 		?>
 
-<h2 align="middle">Libra<p>Biblioteka Prizrenit</p></h2>
+<h2 align="middle">Libra<p>Biblioteka e Prizrenit</p></h2>
 <?php  
 		$count = 1;
 		while($rowLibrat = mysqli_fetch_assoc($rezultatiLibrat)){
