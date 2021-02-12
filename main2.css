@@ -3,27 +3,26 @@
   text-decoration: none;
 }
 p, h3, h2, h1{
-    color: white;
+	color: white;
 }
 body {
   font-family: "Roboto", sans-serif;
   padding: 10px;
-  background: #343538;
+  background-color: #343538;
 
 }
 
-.leftcolumn {
-  float: left;
-  width: 75%;
+.leftcolumn {   
+  margin-left: auto;
+  margin-right: auto;
+  width: 35%;
 }
 
 .card {
   background-color: #26272b;
   padding: 20px;
   margin-top: 20px;
-  align-self: start;
-
-
+  align-self: start; 
 }
 
 .mesi{
@@ -32,4 +31,9 @@ body {
   width: 50%;
   padding: 10px;
 
+}
+
+.responsive {
+  width: 60%;
+  height: auto;
 }
