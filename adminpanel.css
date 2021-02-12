@@ -1,0 +1,68 @@
+.header {
+  padding: 15px 45px;
+  font-family: 'Noto Serif', serif;
+  color: white;
+  background: black;
+}
+body {
+  position: relative;
+  margin: 0;
+  min-height: 100%;
+  background-color: #343538;
+}
+
+a { text-decoration: none; }
+
+h1, p { font-family: 'Noto Serif', serif;
+font-color: white;
+ }}
+
+
+* { margin: 0px; padding: 0px; }
+.header .logo h1 { color: white; }
+
+
+.btn {
+	color: white;
+	background: #4E6166;
+	text-align: center;
+	border: none;
+	border-radius: 5px;
+	display: block;
+	letter-spacing: .1em;
+	padding: 13px 20px;
+	text-decoration: none;
+}
+
+.container {
+	width: 95%;
+	margin: 5px auto 50px;
+	padding: 10px 0px 50px;
+	background: blur;
+}
+.container:after { content: ""; display: block; clear: both; }
+.container.dashboard h1 { text-align: center; margin: 25px; }
+.container.dashboard .stats a {
+	display: inline-block;
+	padding: 30px;
+	margin: 5px;
+	width: 25%;
+	text-align: center;
+	border-radius: 3px;
+	border: 1px solid #BFBCB3;
+	text-decoration: none;
+}
+
+.container.dashboard .stats a.first { margin-left: 25px; }
+.container.dashboard .stats a:hover { cursor: pointer; background-color: #E1E1E1; }
+.container.dashboard .buttons { margin-left: 15px; }
+.container.dashboard .buttons a {
+	display: inline-block;
+	margin: 10px;
+	text-decoration: none;
+	color: #444;
+	padding: 10px 25px;
+	border: none;
+	background-color: #0E7D92;
+	color: white;
+}
