@@ -26,14 +26,14 @@ if(isset($_SESSION['perdoruesId'])){
 				
 					<div>
 						<a href="#">
-							<img height="500" width="600" src="fotot/prizren1.png" >
+							<img class="responsive"  src="fotot/prizren1.png" >
 							<h3>Prizren</h3>
 							<p>Kalaja Prizrenit</p>
 						</a>
 					</div>
 					<div>
 						<a href="#">
-							<img src="fotot/prizren2.png" >
+							<img class="responsive" src="fotot/prizren2.png" >
 							<h3>Prizren</h3>
 							<p>Marash</p>
 						</a>
@@ -41,7 +41,7 @@ if(isset($_SESSION['perdoruesId'])){
 					
 					<div>
 						<a href="#">
-							<img src="fotot/prizren3.png" >
+							<img class="responsive" src="fotot/prizren3.png" >
 							<h3>Prizren</h3>
 							<p>Shadervani</p>
 						</a>
@@ -49,7 +49,7 @@ if(isset($_SESSION['perdoruesId'])){
 					
 					<div>
 						<a href="#">
-							<img src="fotot/prizren4.png" >
+							<img class="responsive" src="fotot/prizren4.png" >
 							<h3>Prizren</h3>
 							<p>Kisha</p>
 						</a>
@@ -59,7 +59,7 @@ if(isset($_SESSION['perdoruesId'])){
 
 					<div>
 						<a href="#">
-							<img src="fotot/abi1.png" >
+							<img class="responsive" src="fotot/abi1.png" >
 							<h3>Prizren</h3>
 							<p>Abi Qarshia</p>
 						</a>
