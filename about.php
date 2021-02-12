@@ -23,20 +23,20 @@ if(isset($_SESSION['perdoruesId'])){
 <?php
 		require '../navbar.php';
 		?>
-			<div align="middle">
-				<div>
-					<div>
+
+				<div class="row" align="middle">
+					<div class="column">
 						<h2 >Rreth Bibliotekes<span></span></h2>
-						<p>eshte shenuar kete te hene 70-vjetori i funksionimit te Bibliotekes Nderkomunale te Prizrenit. Drejtoresha e ketij institucioni, Sahadete Sadikaj-Kukaj tha se perkunder sfidave te ndryshme, me mjaft sukses po permbyllet edhe dekada e shtat e funksionimit.</p>
+						<p>Eshte shenuar kete te hene 70-vjetori i funksionimit te Bibliotekes Nderkomunale te Prizrenit. Drejtoresha e ketij institucioni, Sahadete Sadikaj-Kukaj tha se perkunder sfidave te ndryshme, me mjaft sukses po permbyllet edhe dekada e shtat e funksionimit.</p>
 						<p> Pas fjalimeve eshte bere promovimi i librit “Nga gjerdani kombetar” me poezi nga 70 shkrimtare nga te gjitha trojet shqiptare. Gjithashtu eshte hapur edhe ekspozita e librave qe jane bere pjese e Bibliotekes gjate vitit 2018, si dhe ka qene e hapur ajo e fotografive te vjetra te qytetit te Prizrenit.
 						Te pranishem ishin krijues letrare, zyrtare te ambasadave te huaja ne vend, perfaqesues te bibliotekave nga hapesirat mbareshqiptare e qytetare te shumte.</p>
 					</div>
 					<div>
-						<img src="fotot/prizren3.png"> 
+						<img width="100" class="responsive" src="fotot/prizren3.png"> 
 					</div>
 				</div>
 				
-			</div>
+
 
 			<div>
 				<h2>Ekipi</span></h2>
