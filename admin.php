@@ -41,10 +41,6 @@ if($row['roli'] != "admin"){
 				<a style="color: white;" href="shtoliber.php">
 				<span>Shto nje Liber</span> <br>
 				</a>
-
-			<a style="color: white;" href="menaxhimiPerdorueseve.php">
-				<span>Menaxho Perdoruesit</span> <br>
-			</a>
 		</div>
 
 </div>
