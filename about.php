@@ -15,7 +15,7 @@ if(isset($_SESSION['perdoruesId'])){
  <html>
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/stili2.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/main2.css">
 	<title>Rreth Nesh</title>
 	</head>
 	<body>
@@ -23,7 +23,7 @@ if(isset($_SESSION['perdoruesId'])){
 <?php
 		require '../navbar.php';
 		?>
-			<div>
+			<div align="middle">
 				<div>
 					<div>
 						<h2 >Rreth Bibliotekes<span></span></h2>
