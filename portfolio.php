@@ -13,7 +13,7 @@ if(isset($_SESSION['perdoruesId'])){
 <html> 
 	<head>
 		<link rel="stylesheet" type="text/css" href="css/stili2.css">
-		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<link rel="stylesheet" type="text/css" href="css/main2.css">
 	<title>Biblioteka</title>
 	</head>
 	<body>
@@ -21,7 +21,7 @@ if(isset($_SESSION['perdoruesId'])){
 <?php
 		require '../navbar.php';
 		?>
-			<div>
+			<div align="middle">
 				<h2>Qyteti dhe biblioteka</span></h2>
 				
 					<div>
@@ -65,16 +65,11 @@ if(isset($_SESSION['perdoruesId'])){
 						</a>
 					</div>
 
-
-					
-				</div>
 			</div>
 		
 
 		
 
-		</div>
-	</div>
 
 	</body>
 </html>
@@ -84,3 +79,5 @@ if(isset($_SESSION['perdoruesId'])){
 	header("Location: ../indexLogin.php");
 }
 ?>
+
+
