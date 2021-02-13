@@ -19,8 +19,6 @@ if($row['roli'] != "admin"){
 		<a href="admin.php">
 			<h1>ADMIN PANELI</h1>
 		</a>
-
-
 	<div class="logo">
 		<a href="faqet/index.php">
 			<h1 style="float: right;">KTHEHU NE HOMEPAGE</h1>
@@ -31,7 +29,7 @@ if($row['roli'] != "admin"){
 
 
 <div style=" text-transform: capitalize;" class="container dashboard">
-	<h1>Mirëse Erdhe <?php echo $row['perdoruesiPerdoruesit']; ?>!</h1>
+	<h1>Mirë se Erdhe <?php echo $row['perdoruesiPerdoruesit']; ?>!</h1>
 <div class="stats">
 			<a style="color: white;" href="mesazhet.php" class="first">
 				<span>Lexo Mesazhet</span> 
@@ -41,6 +39,10 @@ if($row['roli'] != "admin"){
 				<a style="color: white;" href="shtoliber.php">
 				<span>Shto nje Liber</span> <br>
 				</a>
+
+				<a style="color: white;" href="menaxhimiPerdorueseve.php">
+				<span>Menaxho Perdoruesit</span> <br>
+				</a>		
 		</div>
 
 </div>
