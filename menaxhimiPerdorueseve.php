@@ -1,15 +1,28 @@
 <link rel="stylesheet" type="text/css" href="faqet/css/adminpanel.css">
- <table width="100%" border="1" style="border-collapse:collapse;"> 
+<table width="100%" border="1" style="border-collapse:collapse;">
+<style>
+table, td, th {  
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+}
+</style>
 <?php
 require 'konfigurimi.php';
 $sqlPerdorusit = "SELECT * FROM perdoruesit ORDER BY idPerdoruesit desc";
 $rezultatiPerdoruesit = mysqli_query($conn, $sqlPerdorusit);
-
 if($row['roli'] != "admin"){
 	header("Location: mesazhi.php");
 } else {
 ?>
-
 <title>Admin Paneli</title>
 
 <div class="header">
@@ -25,11 +38,8 @@ if($row['roli'] != "admin"){
 	</div>
 </div>
 </div> <br> <br>
-
-
 <div style=" text-transform: capitalize;" class="container dashboard">
 	<h1>Mirë se erdhe <?php echo $row['perdoruesiPerdoruesit']; ?>!</h1>
-
 	<thead>
 <tr>
 <th style="color: white;"><strong>Numerimi</strong></th>
@@ -40,24 +50,22 @@ if($row['roli'] != "admin"){
 </thead>
 <tbody>
 
-	<?php 
-		if(isset($_POST['submit-menaxhim'])){
-		}
 
-	?>
 	<?php  
 		$count=1;
 		while($rowPerdorusit = mysqli_fetch_assoc($rezultatiPerdoruesit)){
-?>
-			
+?>		
+
 	<tr><td align="center"><p style="color: white;"><?php echo $count; ?></p></td>
 		<td align="center"><p style="color: white;"><?php echo $rowPerdorusit["perdoruesiPerdoruesit"]; ?></p></td>
 		<td align="center"><p style="color: white;"><?php echo $rowPerdorusit["emailiPerdoruesit"]; ?></p></td>
 		<td align="center">
 			<form action="menaxhimiPerdorueseve.php" method="post">
 				<?php if($rowPerdorusit['roli'] == "admin"){  ?>
-			<?php echo '<button>Bej user </button>'; } else { ?>	 
-			<button>Bej Admin </button> <?php } ?>
+			<?php echo '<div align="middle"><button> Bëj user </button></div>'; } else { ?>	 
+			<div align="middle">
+				<button>Bëj Admin </button>
+				</div> <?php } ?>
 		</form>
 		</td>
 	</tr>
