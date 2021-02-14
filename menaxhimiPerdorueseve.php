@@ -45,32 +45,29 @@ if($row['roli'] != "admin"){
 <th style="color: white;"><strong>Numerimi</strong></th>
 <th style="color: white;"><strong>Emri</strong></th>
 <th style="color: white;"><strong>Emaili</strong></th>
+<th style="color: white;"><strong>Roli</strong></th>
 <th style="color: white;"><strong>Nderro Rolin</strong></th>
 </tr>
 </thead>
 <tbody>
 
 
-	<?php  
+	<?php 
 		$count=1;
 		while($rowPerdorusit = mysqli_fetch_assoc($rezultatiPerdoruesit)){
-?>		
-
-	<tr><td align="center"><p style="color: white;"><?php echo $count; ?></p></td>
+	?>		
+	<tr>
+		
+		<td align="center"><p style="color: white;"><?php echo $count; ?></p></a></td>
 		<td align="center"><p style="color: white;"><?php echo $rowPerdorusit["perdoruesiPerdoruesit"]; ?></p></td>
 		<td align="center"><p style="color: white;"><?php echo $rowPerdorusit["emailiPerdoruesit"]; ?></p></td>
-		<td align="center">
-			<form action="menaxhimiPerdorueseve.php" method="post">
-				<?php if($rowPerdorusit['roli'] == "admin"){  ?>
-			<?php echo '<div align="middle"><button> Bëj user </button></div>'; } else { ?>	 
-			<div align="middle">
-				<button>Bëj Admin </button>
-				</div> <?php } ?>
-		</form>
-		</td>
+		<td align="center"><p style="color: white;"><?php echo $rowPerdorusit["roli"]; ?></p></td>
+		<td align="center"><a style="color: white;" href="editimi.php?idd=<?php echo $rowPerdorusit['idPerdoruesit'] ?>">Kliko</a></td>
+		
 	</tr>
 
 			<?php
+			
 $count++;
 			 } 
  ?>
